@@ -1,0 +1,68 @@
+$color_ett:green;  
+
+$bakgrundsbild:rgb(100, 100, 222); 
+
+  
+
+ 
+body {
+    background-color: $bakgrundsbild;  
+}
+ 
+
+//fontsize multiplicering i två 
+@function fontstyling($style) { 
+    @return $style*2; 
+}
+
+
+@mixin border($border) {
+    border-radius: $border;
+}
+
+
+@function colorchanger($bakgrundsbild , $color){
+    @if $bakgrundsbild white{ 
+        
+        @return $color pink;   
+    }
+}
+
+
+h1 {
+    font-size: fontstyling(30px);
+}
+
+//border till 5px 
+button {
+    @include border(5px);    
+}
+
+#komplament1 { 
+    color: complement($color: $bakgrundsbild); 
+}
+
+
+@mixin colorchanger($color,$color2) { 
+    color: $color; 
+    
+    background-color: $color2;
+}
+
+
+#header1 { 
+    @include colorchanger(blue,yellow )  
+}
+
+
+$primärfärg:rgb(161, 165, 42);  
+
+
+p {
+    color: $primärfärg;   
+} 
+
+
+
+
+

@@ -1,0 +1,24 @@
+body {
+  background-color: rgb(100, 100, 222);
+}
+
+h1 {
+  font-size: 60px;
+}
+
+button {
+  border-radius: 10px;
+}
+
+#komplament1 {
+  color: #dede64;
+}
+
+#header1 {
+  color: blue;
+  background-color: yellow;
+}
+
+p {
+  color: rgb(161, 165, 42);
+}/*# sourceMappingURL=style.css.map */
